@@ -106,7 +106,6 @@ CREATE TABLE SupportServices(
     CONSTRAINT SupportService_FK1 FOREIGN KEY (StudentDisabilityId) REFERENCES StudentDisability(StudentDisabilityId));
 
 -- Insert data into the tables
-
 INSERT INTO Users(UserId, UserFirstName, UserLastName, UserPhone, UserEmail) 
 VALUES  
 (1001, 'John', 'Smith', '1234567000', 'john.smith@example.com'),
@@ -426,6 +425,7 @@ VALUES
 (431, 'Standard', 'Art', '2024-01-04', 95,  337),
 (432, 'Standard', 'Music', '2024-01-04', 65,  338),
 (433, 'Standard', 'Drama', '2024-01-04', 80, 339);
+
 -- Inserting into Grade table
 INSERT INTO Grade(GradeId, GradeValue, GradeDate, StudentScheduleId)
 VALUES
@@ -441,7 +441,7 @@ VALUES
 (509, 85, '2024-04-01', 309),
 (510, 90, '2024-04-01', 310),
 (511, 95, '2024-04-01', 311),
-(512, 100, '2024-04-01', 312),
+(512, 65, '2024-04-01', 312),
 (513, 85, '2024-04-01', 313),
 (514, 90, '2024-04-01', 314),
 (515, 95, '2024-04-01', 315),
@@ -449,7 +449,7 @@ VALUES
 (517, 90, '2024-04-01', 318),
 (518, 95, '2024-04-01', 319),
 (519, 85, '2024-04-01', 320),
-(520, 90, '2024-04-01', 321),
+(520, 55, '2024-04-01', 321),
 (521, 95, '2024-04-01', 322),
 (522, 85, '2024-04-01', 323),
 (523, 90, '2024-04-01', 324),
