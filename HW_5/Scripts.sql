@@ -30,7 +30,7 @@ WHERE S_PRODUCT_t.Standard_Price > 500;
 --5.	List all customers. Print the order ID (s) along with the customer information if they have submitted the order(s).
 SELECT S_CUSTOMER_t.Customer_Id, S_CUSTOMER_t.Customer_Name, S_CUSTOMER_t.Customer_Address, S_CUSTOMER_t.Customer_City, S_CUSTOMER_t.Customer_State, S_CUSTOMER_t.Postal_Code, GROUP_CONCAT(S_ORDER_t.Order_Id) as Order_Ids
 FROM S_CUSTOMER_t
-LEFT JOIN S_ORDER_t ON S_CUSTOMER_t.Customer_Id = S_ORDER_t.Customer_Id
+INNER JOIN S_ORDER_t ON S_CUSTOMER_t.Customer_Id = S_ORDER_t.Customer_Id
 GROUP BY S_CUSTOMER_t.Customer_Id;
 
 --6.	Display the subtotal amount of each orderline in each order.
